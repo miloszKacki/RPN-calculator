@@ -9,6 +9,7 @@ The project was written as an assignment for Algorithms and data structures clas
 ## Input
 
 > n-number of formulas
+> 
 > n formulas ending with a dot('.')
 
 Input formulas are written in correct infix notation.
@@ -29,7 +30,9 @@ IF ( ( 6 + 8 ) , ( 4 / 2 ) , MIN ( 8 , 2 , 1 , 0 , 3 ) ) * 2 * 6 / N ( 3 ) .
 ## Output
 
 > formula in postfix notation
+> 
 > before every operation, operator and the contents of the stack are printed out
+> 
 > result
 
 ### Example output
@@ -45,6 +48,8 @@ MIN4 77 35 36 66 80 34 100
 MIN6 60 50 35 80 34 100
 
 34
+
+//
 
 2  100  1  6  5  *  2  +  2  MAX3  80  66  36  35  77  MIN4  50  60  MIN6  3  *  +
 
@@ -64,6 +69,7 @@ MIN6 60 50 35 80 32 100 2
 
 98
 
+//
 
 400  N  11  3  2  *  -  2  /  +  200  N  N  +
 
@@ -85,6 +91,7 @@ N -200 -398
 
 -198
 
+//
 
 6  8  +  4  2  /  8  2  1  0  3  MIN5  IF  2  *  6  *  3  N  /
 
