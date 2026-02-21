@@ -1,4 +1,4 @@
-## Some info
+## RPN calculator
 
 This is an early project of mine - code is in polish, sorry :(.
 
