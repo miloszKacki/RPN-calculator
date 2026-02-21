@@ -1,4 +1,5 @@
 ## Some info
 
-This is an early project - code is in polish, sorry :(.
-The project was written as a part of Algorithms and data structures class.
+This is an early project of mine - code is in polish, sorry :(.
+
+The project was written as an assignment for Algorithms and data structures class.
