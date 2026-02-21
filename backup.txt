@@ -1,0 +1,46 @@
+
+ONP DZIALA BEZ MIN
+
+void wczytajWersONP() {
+	StyrtaChar* stak = new StyrtaChar;
+
+	char ramka = ',';
+	while (ramka != '.') {
+		while (ramka == ' ' || ramka == ',') {
+			ramka = fgetc(stdin);
+		}
+		if (ramka <= '9' && ramka >= '0') {
+			cout << wczytajOperand(ramka) << " ";
+		}
+		else if (ramka == '(') {
+			stak->dodaj('(');
+		}
+		else if (ramka == ')') {
+			while (!(stak->czyPusty()))
+			{
+				char op = stak->zdejmijOperacje();
+				if (op == '(') break;
+				else cout << op << " ";
+			}
+		}
+		else {
+			int p = priorytet(ramka);
+			while (!(stak->czyPusty())) {
+				char top = stak->zdejmijOperacje();
+				if (top == '(' || p > priorytet(top)) {
+					stak->dodaj(top);
+					break;
+				}
+				cout << top << " ";
+			}
+			stak->dodaj(ramka);
+
+		}
+		ramka = fgetc(stdin);
+	}
+	while (!(stak->czyPusty())) {
+		cout << stak->zdejmijOperacje() << " ";
+	}
+
+	delete stak;
+}
