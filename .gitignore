@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Some other vs junk
+ONP_Kalkulator.vcxproj
+ONP_Kalkulator.vcxproj.*
+
 # User-specific files
 *.rsuser
 *.suo
